@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ModalComSeguePelaController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3a-Xy-etK">
+                                <rect key="frame" x="20" y="725" width="350" height="35"/>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.22352941179999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="tela2"/>
+                                <connections>
+                                    <action selector="tappedTela2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LRX-3s-kRy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h3a-Xy-etK" secondAttribute="trailing" constant="20" id="23a-BH-4lg"/>
+                            <constraint firstItem="h3a-Xy-etK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4hr-WE-GMC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h3a-Xy-etK" secondAttribute="bottom" constant="50" id="d6O-Nf-yU7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="7I4-05-HND" kind="show" identifier="tela2" id="E2x-2E-5op"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="-94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zXA-Fs-ECr">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GxN-55-DQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="7I4-05-HND" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lz4-yU-qRt">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kt-mp-I4a">
+                                <rect key="frame" x="20" y="702" width="350" height="35"/>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.22352941179999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="tela3"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VlJ-I0-jsZ"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="VlJ-I0-jsZ" firstAttribute="bottom" secondItem="8kt-mp-I4a" secondAttribute="bottom" constant="50" id="48o-kB-9ht"/>
+                            <constraint firstItem="VlJ-I0-jsZ" firstAttribute="trailing" secondItem="8kt-mp-I4a" secondAttribute="trailing" constant="20" id="L1L-zB-8SY"/>
+                            <constraint firstItem="8kt-mp-I4a" firstAttribute="leading" secondItem="VlJ-I0-jsZ" secondAttribute="leading" constant="20" id="cnj-Fe-Wuv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3bQ-Td-Gfc"/>
+                    <connections>
+                        <segue destination="PkO-SJ-BzK" kind="show" identifier="tela3" id="c4Z-IS-bQ8"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1027.6923076923076" y="-95.260663507109001"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x0E-Dh-EYj">
+            <objects>
+                <viewController id="PkO-SJ-BzK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pGn-9Z-n1u">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iCx-hM-mpk"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rNa-M5-KiQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8QG-zw-6st" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763" y="-95"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
